@@ -15,9 +15,17 @@
   --content-tertiary: #9CA3AF;
   --border-primary: #D1D5DB;
   --border-hover: #B9C2D0;
+
+  --ff-base: "Inter", sans-serif;
+
+  --text-tile: 1.5rem;
+  --text-base: 1rem;
+  --text-link: .875rem;
 }
 
-
+html {
+  font: 500 var(--text-base)/1.5 var(--ff-base);
+}
 
 .desktop-only {
   display: none;
