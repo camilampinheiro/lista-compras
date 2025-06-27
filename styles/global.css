@@ -18,7 +18,7 @@
 
   --ff-base: "Inter", sans-serif;
 
-  --text-tile: 1.5rem;
+  --text-title: 1.5rem;
   --text-base: 1rem;
   --text-link: .875rem;
 }
@@ -31,6 +31,10 @@ html {
   display: none;
 }
 
+.show-alert {
+  display: block;
+}
+
 @media (width >= 80em) {
   .desktop-only {
     display: block;
@@ -40,5 +44,7 @@ html {
     max-width: 100%;
     height: auto;
     margin: 0 auto;
+
+    margin-top: 1.5rem;
   }
 }

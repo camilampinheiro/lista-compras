@@ -1,0 +1,25 @@
+header {
+  max-width: 20.3125rem;
+  width: 100%;
+  margin: auto;
+
+  margin-top: 4.875rem;
+
+  & div {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: var(--color-brand);
+  }
+
+  & h1 {
+    font: 700 var(--text-title)/1.5 var(--ff-base);
+    margin-top: 1rem;
+  }
+}
+
+@media (width >= 80em) {
+  header {
+    max-width: 39.1875rem;
+  }
+}
