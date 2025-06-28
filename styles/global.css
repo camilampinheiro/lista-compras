@@ -33,7 +33,7 @@ html, input, button {
 }
 
 .show-alert {
-  display: block;
+  display: flex;
 }
 
 @media (width >= 80em) {

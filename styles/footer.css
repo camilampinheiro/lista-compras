@@ -13,11 +13,32 @@ footer {
   background-color: var(--color-danger);
   color: var(--bg-secondary);
 
-  /* justify-content: space-between; */
+  margin-top: 2.25rem;
+
+  & ion-icon {
+    font-size: 1.25rem;
+  }
+
+  & button {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: var(--bg-secondary);
+  }
+
+  & #remove-alert {
+    margin-left: 2.5rem;
+  }
 }
 
 @media (width >= 80em) {
   footer {
     max-width: 39.1875rem;
+
+    & #remove-alert {
+    margin-left: 21rem;
+    }
   }
 }
