@@ -23,8 +23,9 @@
   --text-link: .875rem;
 }
 
-html {
+html, input, button {
   font: 500 var(--text-base)/1.5 var(--ff-base);
+  background-color: var(--bg-primary);
 }
 
 .desktop-only {
