@@ -21,6 +21,10 @@
     align-items: center;
     gap: .75rem;
 
+    & ion-icon {
+      color: var(--content-tertiary);
+    }
+
     & button {
       border: none;
       background-color: transparent;

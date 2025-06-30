@@ -28,6 +28,10 @@ form {
     color: var(--bg-secondary);
     cursor: pointer;
   }
+
+  & button:hover {
+    background-color: var(--color-brand-hover);
+  }
 }
 
 @media (width >= 80em) {

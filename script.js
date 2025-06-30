@@ -4,22 +4,12 @@ const form = document.querySelector("form")
 const itemInput = document.querySelector("input") 
 const ul = document.querySelector(".list ul") 
 
-document.querySelectorAll(".remove-item").forEach(button => {
-  button.addEventListener("click", () => {
-    const itemList = button.parentElement
-    itemList.remove()
-    footer.classList.add("show-alert")
-  })
-})
-
-removeAlert.addEventListener("click", () => {
-  footer.classList.remove("show-alert")
-})
-
 form.addEventListener("submit", (e) => {
   e.preventDefault()
   const itemText = itemInput.value.trim()
-  if (itemText === "") return
+  if (itemText === "") {
+    return
+  }
 
   const li = document.createElement("li")
 
@@ -37,10 +27,13 @@ form.addEventListener("submit", (e) => {
   trashIcon.setAttribute("name", "trash-outline")
   removeBtn.appendChild(trashIcon)
 
-  // Evento para o novo botão de excluir
   removeBtn.addEventListener("click", () => {
     li.remove()
     footer.classList.add("show-alert")
+  })
+
+  removeAlert.addEventListener("click", () => {
+    footer.classList.remove("show-alert")
   })
 
   li.appendChild(checkBtn)
